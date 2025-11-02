@@ -1,0 +1,90 @@
+/* Full page background */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Form card styling */
+.login-form {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Form title */
+.login-form h2 {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Form subtitle */
+.login-form p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Input spacing */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Button styling */
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2575fc;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #1a5bd8;
+}
+
+/* Links below form */
+.login-form .links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.login-form .links a button {
+  background: none;
+  border: none;
+  color: #2575fc;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.login-form .links a button:hover {
+  text-decoration: underline;
+}
+
+/* Optional: override valid-feedback color */
+.valid-feedback {
+  color: #198754;
+  display: block;
+  font-size: 13px;
+}
+
+/* Optional: invalid-feedback styling (Bootstrap default works too) */
+.invalid-feedback {
+  display: block;
+  font-size: 13px;
+}

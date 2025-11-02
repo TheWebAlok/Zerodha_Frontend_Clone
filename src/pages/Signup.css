@@ -1,0 +1,87 @@
+/* Container for the whole form */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+/* Form styling */
+.signup-form {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Form heading */
+.signup-form h2 {
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Labels */
+.signup-form .form-label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #555;
+}
+
+/* Inputs */
+.signup-form .form-control {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.signup-form .form-control:focus {
+  border-color: #6a11cb;
+  box-shadow: 0 0 5px rgba(106, 17, 203, 0.3);
+  outline: none;
+}
+
+/* Button */
+.signup-form .btn-primary {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  background: #6a11cb;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.signup-form .btn-primary:hover {
+  background: #2575fc;
+  cursor: pointer;
+}
+
+/* Account text */
+.signup-form .account-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-form .account-link {
+  color: #6a11cb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-form .account-link:hover {
+  text-decoration: underline;
+}

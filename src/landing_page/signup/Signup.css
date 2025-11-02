@@ -1,0 +1,94 @@
+/* Signup page container */
+form {
+  width: 350px;
+  margin: 80px auto;
+  padding: 40px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #ef66e3 50%, #82f1e8 50%);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Form title */
+form h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields */
+form input {
+  width: 85%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect */
+form input:focus {
+  border-color: #7ee8d7;
+  box-shadow: 0 0 8px rgba(126, 232, 215, 0.5);
+}
+
+/* Button */
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #a0f0e0;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #7ee8d7;
+  transform: translateY(-2px);
+}
+
+/* Optional: responsive */
+@media (max-width: 400px) {
+  form {
+    width: 90%;
+    padding: 30px;
+  }
+
+  form input {
+    width: 100%;
+  }
+}
+
+/* Account login text */
+.account-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Link styling */
+.account-link {
+  color: #6a11cb;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.account-link:hover {
+  color: #2575fc;
+  text-decoration: underline;
+}
