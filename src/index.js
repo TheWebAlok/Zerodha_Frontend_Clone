@@ -13,7 +13,7 @@ import Signup from "./pages/Signup.jsx";
 import Login from "./pages/Login.jsx";
 import ForgotPassword from "./pages/ForgotPassword.jsx";
 // import Login from "./landing_page/login/Login.js";
-import Homepage from "./landing_page/Home/HomePage";
+import HomePage from "./landing_page/Home/HomePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,7 +21,7 @@ root.render(
     <Navbar />
 
     <Routes>
-      <Route path="/" element={<Homepage />} />
+      <Route path="/" element={<HomePage />} />
       {/* <Route path="/signup" element={<Signup />} /> */}
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
