@@ -7,7 +7,7 @@ import Education from "./Education";
 import OpenAccount from "../OpenAccount";
 
 
-function Homepage() {
+function HomePage() {
   return (
     <>
     
@@ -22,4 +22,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default HomePage;
