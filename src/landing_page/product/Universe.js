@@ -15,29 +15,29 @@ function Universe({
           Extend your trading and Investment experience even further with our
           partner platform.
         </p>
-
+        
         <div className="col-4 p-3 mt-5">
-          <img src="media/smallcaseLogo.png" />
+          <img alt="" src="media/smallcaseLogo.png" />
           <p className="text-small text-muted">Thematic Investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/streakLogo.png" style={{height:"40px"}}/>
+          <img alt="" src="media/streakLogo.png" style={{height:"40px"}}/>
           <p className="text-small text-muted">Thematic Investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/sensibullLogo.svg" style={{height:"30px"}} />
+          <img alt="" src="media/sensibullLogo.svg" style={{height:"30px"}} />
           <p className="text-small text-muted">Thematic Investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/zerodhaFundhouse.png"style={{height:"40px"}} />
+          <img alt="" src="media/zerodhaFundhouse.png"style={{height:"40px"}} />
           <p className="text-small text-muted">Thematic Investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/GoldenpiLogo.png" />
+          <img alt="" src="media/GoldenpiLogo.png" />
           <p className="text-small text-muted">Thematic Investment platform</p>
         </div>
         <div className="col-4 p-3 mt-5">
-          <img src="media/dittoLogo.png" style={{height:"40px"}} />
+          <img alt="" src="media/dittoLogo.png" style={{height:"40px"}} />
           <p className="text-small text-muted">Thematic Investment platform</p>
         </div>
         <button className="p-3 btn btn-primary fs-5" style={{width: "20%", margin: "0 auto"}}>Signup Now</button>

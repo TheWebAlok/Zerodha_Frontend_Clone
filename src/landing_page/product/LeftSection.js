@@ -6,36 +6,47 @@ function LeftSection({
   ProductDescription,
   tryMore,
   learnMore,
-  googlePLay,
+  googlePlay,
   appStore,
 }) {
   return (
-    <div className="container mt-5 ">
+    <div className="container mt-5">
       <div className="row p-5">
-        <div className="col-6 ">
-          <img src={imageUrl} />
+        <div className="col-6">
+          <img src={imageUrl} alt="product" style={{ width: "100%" }} />
         </div>
+
         <div className="col-6 p-5 mt-5">
           <h1>{productName}</h1>
           <p>{ProductDescription}</p>
-          <div className="">
-            <a href={tryMore} style={{ textDecoration: "none" }}>
-              Try Demo <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+
+          {/* Try / Learn More Links */}
+          <div>
+            <a href={tryMore || "#"} style={{ textDecoration: "none" }}>
+              Try Demo <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
+
             <a
-              href={learnMore}
+              href={learnMore || "#"}
               style={{ marginLeft: "120px", textDecoration: "none" }}
             >
-              learn More{" "}
-              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+              Learn More{" "}
+              <i className="fa fa-long-arrow-right" aria-hidden="true"></i>
             </a>
           </div>
-          <div className="">
-            <a href={googlePLay}>
-              <img src="media/googlePLayBadge.svg" />
+
+          {/* App Store Buttons */}
+          <div className="mt-4">
+            <a href={googlePlay || "#"}>
+              <img src="media/googlePLayBadge.svg" alt="Google Play" />
             </a>
-            <a href={appStore}>
-              <img src="media/appstoreBadge.svg" style={{ margin: "50px" }} />
+
+            <a href={appStore || "#"}>
+              <img
+                src="media/appstoreBadge.svg"
+                alt="App Store"
+                style={{ marginLeft: "50px" }}
+              />
             </a>
           </div>
         </div>

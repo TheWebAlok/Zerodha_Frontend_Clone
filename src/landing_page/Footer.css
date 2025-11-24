@@ -1,0 +1,21 @@
+.footer-link {
+  text-decoration: none;
+  color: grey;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.footer-link:hover {
+  color: black;
+}
+
+.footer-bottom-item {
+  padding: 12px;
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.footer-bottom-item:hover {
+  color: black;
+}
