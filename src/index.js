@@ -14,7 +14,7 @@ import Login from "./pages/Login.jsx";
 import ForgotPassword from "./pages/ForgotPassword.jsx";
 // import Login from "./landing_page/login/Login.js";
 import Home from "./pages/Home.jsx";
-import HomePage from "./landing_page/Home/HomePage.js";
+import HomePage from './landing_page/Home/HomePage.js';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
