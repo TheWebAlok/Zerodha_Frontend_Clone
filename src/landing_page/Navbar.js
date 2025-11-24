@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav
@@ -7,9 +8,12 @@ function Navbar() {
       style={{ backgroundColor: "#fff" }}
     >
       <div className="container p-2">
+        {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img src="media/logo.svg" style={{ width: "35%" }} alt="Logo" />
         </Link>
+
+        {/* Toggler */}
         <button
           className="navbar-toggler"
           type="button"
@@ -21,47 +25,61 @@ function Navbar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <form className="d-flex fw-bold" role="search">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/">
-                  Home
-                </Link>
-              </li>
 
-              <li className="nav-item">
-                <Link className="nav-link active" to="/about">
-                  About
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/product">
-                  Product
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/pricing">
-                  Pricing
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="support">
-                  Support
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="http://localhost:3000/">
-                  Dashboard
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/signup">
-                  Signup
-                </Link>
-              </li>
-            </ul>
-          </form>
+        {/* Menu */}
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+
+            <li className="nav-item">
+              <Link className="nav-link active" to="/">
+                Home
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link active" to="/about">
+                About
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link active" to="/product">
+                Product
+              </Link>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link active" to="/pricing">
+                Pricing
+              </Link>
+            </li>
+
+            {/* FIXED — added "/" at start */}
+            <li className="nav-item">
+              <Link className="nav-link active" to="/support">
+                Support
+              </Link>
+            </li>
+
+            {/* FIXED — external link must use <a> */}
+            <li className="nav-item">
+              <a
+                className="nav-link active"
+                href="http://localhost:3001/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Dashboard
+              </a>
+            </li>
+
+            <li className="nav-item">
+              <Link className="nav-link active" to="/signup">
+                Signup
+              </Link>
+            </li>
+
+          </ul>
         </div>
       </div>
     </nav>
